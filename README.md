@@ -10,5 +10,5 @@ Run with:
 docker run -d \
 	-p 25565:25565 \
 	-v /local/path/to/world:/minecraft/world \
-	bestriper/allthemods3-minecraft
+	bestriper/minecraft-servermods-all-the-mods3
 ```
