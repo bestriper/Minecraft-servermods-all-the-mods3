@@ -11,9 +11,9 @@ RUN apk update && apk add curl bash
 # Download and unzip minecraft files 
 RUN mkdir -p /minecraft/world
 
-RUN curl -LO https://minecraft.curseforge.com/projects/all-the-mods-3/files/2583634/download
-RUN unzip server%20files.zip && mv ATM3/* ./
-RUN rmdir ATM3 && rm server%20files.zip
+RUN curl -LO https://media.forgecdn.net/files/2583/634/serverfiles.zip
+RUN unzip serverfiles.zip && mv ATM3/* ./
+RUN rmdir ATM3 && rm serverfiles.zip
 
 # Accept EULA 
 RUN echo "# EULA accepted on $(date)" > /minecraft/eula.txt && \
